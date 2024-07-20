@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="camel8" class="feast.models.Camel8"/>
+    <bean id="horse7" class="feast.models.Horse7">
+        <property name="camel" ref="camel8"/>
+    </bean>
+
+</beans>
