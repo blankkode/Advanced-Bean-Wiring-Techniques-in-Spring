@@ -6,11 +6,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class Pig4 {
 
-    @Autowired
     private Lamb5 lamb;
 
     @Override
     public String toString() {
-        return "which is stuffed inside a lamb, "+ lamb.toString();
+        return "which is stuffed inside a lamb, "+lamb.toString();
+    }
+
+    @Autowired
+    public void setFish(Lamb5 lamb) {
+        this.lamb = lamb;
     }
 }
